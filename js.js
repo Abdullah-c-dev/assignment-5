@@ -32,11 +32,11 @@ document.getElementById('themeButton').addEventListener('click', function () {
     
     // clear history div section
     document.addEventListener("DOMContentLoaded", function () {
-        const clearHistoryButton = document.getElementById("history");
+        const clearhistoryButton = document.getElementById("history");
         const emptyDiv = document.getElementById("emptydiv"); 
     
-        if (clearHistoryButton) { 
-            clearHistoryButton.addEventListener("click", function () {
+        if (clearhistoryButton) { 
+            clearhistoryButton.addEventListener("click", function () {
                 emptyDiv.innerHTML = "";
             });
         
@@ -69,7 +69,7 @@ document.getElementById('themeButton').addEventListener('click', function () {
     
                 twentythreeElement.innerText = increment + 1;
 
-                if (currentCount -1 === 0) { 
+                if (parseInt(sixElement.innerText) === 0) { 
                     alert("congrats !!!! you have completed all the current tasks");
                 }
             });
