@@ -14,16 +14,17 @@
             
                 one: '#3752FD',
                 onetwo: '#9BA8F8',
-                
+                button:'#3752FD'
               }
             }
           }
         }
       </script>
+      <link rel="stylesheet" href="littlebit.css">
 </head>
-<body class="container mx-auto bg-slate-100  gap-3 ">
+<body class="container mx-auto bg-slate-100  gap-3 grid grid-cols-4 ">
     <!-- navbar section -->
-    <nav class="container mx-auto flex justify-between py-4 bg-white mb-4 px-3 rounded-lg">
+    <nav class="container col-span-4  mx-auto flex justify-between py-4 mt-3 bg-white mb-4 px-3 rounded-lg">
         <div class="flex text-center items-center text-3xl">
             <img src="assets/logo.png" alt="">
             <div>Dev<span class="font-bold">Board</span></div>
@@ -31,31 +32,31 @@
         <div class="flex justify-center items-center gap-5  ">
             <button class="flex justify-center textcenter text-3xl font-bold gap-2 bg-slate-50 rounded-lg p-3">
                 <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                <div><span>23</span></div>
+                <div><span id="23">23</span></div>
             </button>
 
-            <button class="bg-slate-50 rounded-full p-3"><img src="assets/theme-btn.png" alt=""></button>
+            <button id="themeButton" class="bg-slate-50 rounded-full p-3 "><img src="assets/theme-btn.png" alt=""></button>
         </div>
         
     </nav>
-    <main class="bg-white">
-        <main class="flex gap-4 bg-slate-100  ">
-            <div class="w-3/4 grid grid-cols-3 justify-between  rounded-lg bg-white p-4 gap-4">
-                <div class="grid grid-cols-5 col-span-3 gap-4 ">
+    
+        <main class="flex gap-4 bg-slate-100 col-span-3 rounded-lg ">
+            <div class=" grid grid-cols-3 justify-between  rounded-lg bg-white p-4 gap-4">
+                <div class="grid grid-cols-5 col-span-3 gap-4  border-dashed ">
                     <div class="flex items-center bg-slate-100  rounded-lg ">
                         <div class=" p-3 col-span-1 "><img class="w-8 h-8 " src="assets/checkbox.png" alt="">
                         </div>
                         <div class="justify-center text-2xl  ">
                             <p>Task Assigned</p>
-                            <p class="font-bold">05</p>
+                            <p id="06" class="font-bold">06</p>
                         </div>
                     </div>
-                    <div class="flex items-center p-3 col-span-3
-                    bg-gradient-to-r from-one to-onetwo justify-center text-2xl text-white gap-3 rounded-lg ">
-                        <img src="assets/board.png" alt="">
-                        <p >Discover Something <br> New Today!</p>
-        
-                    </div>
+                    <a href="qupage.html" class="col-span-3"><div class="flex items-center p-3 
+                        bg-gradient-to-r from-one to-onetwo justify-center text-2xl text-white gap-3 rounded-lg ">
+                            <img src="assets/board.png" alt="">
+                            <p >Discover Something <br> New Today!</p>
+            
+                        </div></a>
                     <div class="flex items-center p-3 gap-3 bg-slate-100 rounded-lg col-span-1">
                         <img class="w-8 h-8" src="assets/calender.png" alt="">
                         <p id="date"></p>
@@ -72,68 +73,62 @@
                 
                 <div class="bg-slate-100 p-4 rounded-lg">
                     <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <h6 class=" text-xl mt-3">Fix Mobile Button Issue</h6>
+                    <p class="bg-white my-5 h-14 truncate-multiline overflow-hidden rounded-lg p-2 ">"Resolve mobile button issues by ensuring proper alignment, responsive design, and smooth interaction on all devices."</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button1" class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg">
-                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">CloudSync</button>
+                    <h6 class=" text-xl mt-3">Add Dark Mode</h6>
+                    <p class="bg-white my-5 h-14  overflow-hidden truncate-multiline rounded-lg p-2 ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button2" class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg">
-                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">SwiftPay</button>
+                    <h6 class=" text-xl mt-3">Optimize  Home page </h6>
+                    <p class="bg-white my-5 h-14  overflow-hidden truncate-multiline rounded-lg p-2 ">"Optimize the homepage by reducing load time, improving navigation, and ensuring mobile responsiveness for better user experience."</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button3" class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg">
-                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">Meta</button>
+                    <h6 class=" text-xl mt-3">Add new emoji 🤲</h6>
+                    <p class="bg-white my-5 h-14  overflow-hidden truncate-multiline rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button4" class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg">
-                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">Google LLC</button>
+                    <h6 class=" text-xl mt-3">Integrate OpenAI API </h6>
+                    <p class="bg-white my-5 h-14  overflow-hidden truncate-multiline rounded-lg p-2 ">"Integrate OpenAI API to enable AI-driven features like text generation, summarization, and natural language processing."</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button5"  class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg">
-                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">ShopEase</button>
-                    <p class=" text-xl mt-3">Fix Mobile Button Issue</p>
-                    <p class="bg-white my-5 h-14  overflow-hidden rounded-lg p-2 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <button class="bg-white p-2 font-semibold text-gray-500 rounded-lg">Glassdoar</button>
+                    <h6 class=" text-xl mt-3">Improve Job searching </h6>
+                    <p class="bg-white my-5 h-14  overflow-hidden truncate-multiline rounded-lg p-2 ">"Improve job searching by enhancing search algorithms, offering personalized recommendations, and integrating skill-based filters."</p>
                         <div class="flex justify-between p-4  items-center">
                             <div><p class="text-slate-600">Deadline</p>
                                 <h2 class="font-semibold">21 March 2025</h2></div>
-                            <button class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
+                            <button id="button6" class="bg-blue-700 py-2 px-2 text-white rounded-md"> Compleated</button>
                         </div>
                 </div>
                 </div>
@@ -141,27 +136,30 @@
     
     
             <!-- history section -->
-            <!-- <div class=" grid  justify-center text-center items-center gap-3 mx-auto p-3  bg-white w-1/4 rounded-lg grid-rows-1">
-                <div class="flex gap-3 text-center justify-center "><img class="h-6 w-6" src="assets/activity.png" alt="">
-                    <p class="text-xl">Activity log</p></div>
-                    <div><button class=   "bg-blue-700 text-white px-3 py-2 rounded-lg">Clear History</button></div>
-               
-            </div> -->
-            <!-- <div class="grid  bg-white w-1/4">
-                <img src="assets/activity.png" alt="">
-                <p>Activity Log</p>
-                hi 
-            </div> -->
-            <div class="flex flex-col items-center bg-white w-1/4 p-4 rounded-lg">
-                <div class="flex items-center justify-center text-center center gap-3"><img src="assets/activity.png" class="h-6 w-6" alt="">
-                    <p class="text-xl font-semibold ">Activity Log</p></div>
-                <p class=""></p>
-            </div>
         </main>
-    </main>
+        <div class="flex flex-col items-center bg-white w-1/4 p-4 rounded-lg  col-span-1 w-full">
+                <div class="border-b-2 border-dashed border-gray-500 w-full ">
+                    <div class="flex items-center justify-center text-center center gap-3 pb-2"><img src="assets/activity.png" class="h-6 w-6" alt="">
+                        <p class="text-xl font-semibold ">Activity Log</p>
+                        
+                        
+                    </div>
+                    <div id="history" class="justify-center items-center text-center bg "><button class="bg-blue-700 py-1 mb-2 px-3 text-white rounded-md">clear history</button></div>
+                </div>
+                <div id="emptydiv"></div>
+            </div>
+            <div id="myModal" class="hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
+  <div class="bg-white rounded-lg p-5">
+    <h2 class="text-xl font-bold">Warning</h2>
+    <p class="mt-3">The task count has reached zero.</p>
+    <div class="flex justify-end mt-5">
+      <button id="closeModal" class="bg-blue-500 text-white py-2 px-4 rounded">Close</button>
+    </div>
+  </div>
+</div>
+   
     
     
-    
-    
+    <script src="js.js"></script>
 </body>
 </html>
